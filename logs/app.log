@@ -1,0 +1,238 @@
+[2026-06-28 11:39:13] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:13] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:13] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:13] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:13] INFO [app.crud.create_address:46] Creating new address: 1600 Amphitheatre Pkwy, Mountain View
+[2026-06-28 11:39:13] INFO [app.crud.create_address:59] Address created successfully with ID: 1
+[2026-06-28 11:39:13] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 201 Created"
+[2026-06-28 11:39:13] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:13] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:13] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:13] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:13] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:13] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:13] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'less_than_equal', 'loc': ('body', 'latitude'), 'msg': 'Input should be less than or equal to 90', 'input': 90.1, 'ctx': {'le': 90.0}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:13] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:13] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:13] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:13] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:13] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:13] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:13] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:13] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'greater_than_equal', 'loc': ('body', 'latitude'), 'msg': 'Input should be greater than or equal to -90', 'input': -90.1, 'ctx': {'ge': -90.0}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:13] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:13] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:13] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:13] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:13] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:13] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:13] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'less_than_equal', 'loc': ('body', 'longitude'), 'msg': 'Input should be less than or equal to 180', 'input': 180.1, 'ctx': {'le': 180.0}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:14] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:14] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:14] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'greater_than_equal', 'loc': ('body', 'longitude'), 'msg': 'Input should be greater than or equal to -180', 'input': -180.1, 'ctx': {'ge': -180.0}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:14] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:14] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:14] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'string_too_short', 'loc': ('body', 'street'), 'msg': 'String should have at least 1 character', 'input': '', 'ctx': {'min_length': 1}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'value_error', 'loc': ('body', 'street'), 'msg': 'Value error, Field cannot be empty or only whitespace', 'input': '    ', 'ctx': {'error': ValueError('Field cannot be empty or only whitespace')}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:14] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:14] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:14] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'string_too_short', 'loc': ('body', 'city'), 'msg': 'String should have at least 1 character', 'input': '', 'ctx': {'min_length': 1}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'value_error', 'loc': ('body', 'city'), 'msg': 'Value error, Field cannot be empty or only whitespace', 'input': '    ', 'ctx': {'error': ValueError('Field cannot be empty or only whitespace')}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:14] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:14] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:14] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'string_too_short', 'loc': ('body', 'state'), 'msg': 'String should have at least 1 character', 'input': '', 'ctx': {'min_length': 1}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'value_error', 'loc': ('body', 'state'), 'msg': 'Value error, Field cannot be empty or only whitespace', 'input': '    ', 'ctx': {'error': ValueError('Field cannot be empty or only whitespace')}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:14] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:14] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:14] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'string_too_short', 'loc': ('body', 'country'), 'msg': 'String should have at least 1 character', 'input': '', 'ctx': {'min_length': 1}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'value_error', 'loc': ('body', 'country'), 'msg': 'Value error, Field cannot be empty or only whitespace', 'input': '    ', 'ctx': {'error': ValueError('Field cannot be empty or only whitespace')}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:14] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:14] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:14] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'string_too_short', 'loc': ('body', 'postal_code'), 'msg': 'String should have at least 1 character', 'input': '', 'ctx': {'min_length': 1}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/: 1 validation error:
+  {'type': 'value_error', 'loc': ('body', 'postal_code'), 'msg': 'Value error, Field cannot be empty or only whitespace', 'input': '    ', 'ctx': {'error': ValueError('Field cannot be empty or only whitespace')}}
+
+  File "D:\code interview\app\routers\addresses.py", line 64, in create_new_address
+    POST /api/v1/addresses/
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:14] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:14] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:14] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:14] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:14] DEBUG [app.crud.get_address:19] Fetching address with ID: 99999
+[2026-06-28 11:39:14] WARNING [app.routers.addresses.read_address:105] Read failed: Address ID 99999 not found
+[2026-06-28 11:39:14] INFO [app.main.http_exception_handler:59] HTTP exception on path /api/v1/addresses/99999: status=404 detail=Address with ID 99999 not found
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/99999 "HTTP/1.1 404 Not Found"
+[2026-06-28 11:39:14] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:14] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:14] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:14] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:14] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:14] INFO [app.crud.create_address:46] Creating new address: Original Street, Original City
+[2026-06-28 11:39:14] INFO [app.crud.create_address:59] Address created successfully with ID: 1
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 201 Created"
+[2026-06-28 11:39:14] DEBUG [app.crud.get_address:19] Fetching address with ID: 1
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/1 "HTTP/1.1 200 OK"
+[2026-06-28 11:39:14] INFO [app.crud.update_address:73] Updating address ID: 1
+[2026-06-28 11:39:14] DEBUG [app.crud.get_address:19] Fetching address with ID: 1
+[2026-06-28 11:39:14] INFO [app.crud.update_address:86] Address ID 1 updated successfully
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: PUT http://testserver/api/v1/addresses/1 "HTTP/1.1 200 OK"
+[2026-06-28 11:39:14] DEBUG [app.crud.get_addresses:33] Fetching addresses skip=0, limit=100
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/ "HTTP/1.1 200 OK"
+[2026-06-28 11:39:14] INFO [app.crud.delete_address:99] Deleting address ID: 1
+[2026-06-28 11:39:14] DEBUG [app.crud.get_address:19] Fetching address with ID: 1
+[2026-06-28 11:39:14] INFO [app.crud.delete_address:107] Address ID 1 deleted successfully
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: DELETE http://testserver/api/v1/addresses/1 "HTTP/1.1 204 No Content"
+[2026-06-28 11:39:14] DEBUG [app.crud.get_address:19] Fetching address with ID: 1
+[2026-06-28 11:39:14] WARNING [app.routers.addresses.read_address:105] Read failed: Address ID 1 not found
+[2026-06-28 11:39:14] INFO [app.main.http_exception_handler:59] HTTP exception on path /api/v1/addresses/1: status=404 detail=Address with ID 1 not found
+[2026-06-28 11:39:14] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/1 "HTTP/1.1 404 Not Found"
+[2026-06-28 11:39:14] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:14] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:15] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:15] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:15] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:15] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:15] INFO [app.crud.create_address:46] Creating new address: 450 Jane Stanford Way, Stanford
+[2026-06-28 11:39:15] INFO [app.crud.create_address:59] Address created successfully with ID: 1
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 201 Created"
+[2026-06-28 11:39:15] INFO [app.crud.create_address:46] Creating new address: 1 Amphitheatre Pkwy, Mountain View
+[2026-06-28 11:39:15] INFO [app.crud.create_address:59] Address created successfully with ID: 2
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 201 Created"
+[2026-06-28 11:39:15] INFO [app.crud.create_address:46] Creating new address: Golden Gate Bridge, San Francisco
+[2026-06-28 11:39:15] INFO [app.crud.create_address:59] Address created successfully with ID: 3
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 201 Created"
+[2026-06-28 11:39:15] INFO [app.crud.create_address:46] Creating new address: Central Park, New York
+[2026-06-28 11:39:15] INFO [app.crud.create_address:59] Address created successfully with ID: 4
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: POST http://testserver/api/v1/addresses/ "HTTP/1.1 201 Created"
+[2026-06-28 11:39:15] INFO [app.routers.addresses.search_addresses:45] Search requested: lat=37.42202, lon=-122.08408, radius=10.0 km
+[2026-06-28 11:39:15] INFO [app.crud.search_addresses_in_radius:131] Searching addresses within radius 10.0 km of (37.42202, -122.08408)
+[2026-06-28 11:39:15] DEBUG [app.crud.search_addresses_in_radius:148] Found 2 candidate addresses in database bounding box
+[2026-06-28 11:39:15] INFO [app.crud.search_addresses_in_radius:159] Found 2 addresses within precise 10.0 km radius
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/search?latitude=37.42202&longitude=-122.08408&radius_km=10.0 "HTTP/1.1 200 OK"
+[2026-06-28 11:39:15] INFO [app.routers.addresses.search_addresses:45] Search requested: lat=37.42202, lon=-122.08408, radius=60.0 km
+[2026-06-28 11:39:15] INFO [app.crud.search_addresses_in_radius:131] Searching addresses within radius 60.0 km of (37.42202, -122.08408)
+[2026-06-28 11:39:15] DEBUG [app.crud.search_addresses_in_radius:148] Found 3 candidate addresses in database bounding box
+[2026-06-28 11:39:15] INFO [app.crud.search_addresses_in_radius:159] Found 3 addresses within precise 60.0 km radius
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/search?latitude=37.42202&longitude=-122.08408&radius_km=60.0 "HTTP/1.1 200 OK"
+[2026-06-28 11:39:15] INFO [app.routers.addresses.search_addresses:45] Search requested: lat=37.42202, lon=-122.08408, radius=0.5 km
+[2026-06-28 11:39:15] INFO [app.crud.search_addresses_in_radius:131] Searching addresses within radius 0.5 km of (37.42202, -122.08408)
+[2026-06-28 11:39:15] DEBUG [app.crud.search_addresses_in_radius:148] Found 0 candidate addresses in database bounding box
+[2026-06-28 11:39:15] INFO [app.crud.search_addresses_in_radius:159] Found 0 addresses within precise 0.5 km radius
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/search?latitude=37.42202&longitude=-122.08408&radius_km=0.5 "HTTP/1.1 200 OK"
+[2026-06-28 11:39:15] INFO [app.main.lifespan:34] Shutting down Address Book application...
+[2026-06-28 11:39:15] DEBUG [asyncio.__init__:634] Using proactor: IocpProactor
+[2026-06-28 11:39:15] INFO [root.setup_logging:45] Logging initialized. Writing debug logs to D:\code interview\logs\app.log
+[2026-06-28 11:39:15] INFO [app.main.lifespan:21] Initializing Address Book application...
+[2026-06-28 11:39:15] INFO [app.main.lifespan:25] Verifying database schema...
+[2026-06-28 11:39:15] INFO [app.main.lifespan:27] Database schema verified.
+[2026-06-28 11:39:15] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/search: 1 validation error:
+  {'type': 'less_than_equal', 'loc': ('query', 'latitude'), 'msg': 'Input should be less than or equal to 90', 'input': '90.5', 'ctx': {'le': 90.0}}
+
+  File "D:\code interview\app\routers\addresses.py", line 15, in search_addresses
+    GET /api/v1/addresses/search
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/search?latitude=90.5&longitude=0.0&radius_km=5.0 "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:15] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/search: 1 validation error:
+  {'type': 'greater_than_equal', 'loc': ('query', 'longitude'), 'msg': 'Input should be greater than or equal to -180', 'input': '-180.5', 'ctx': {'ge': -180.0}}
+
+  File "D:\code interview\app\routers\addresses.py", line 15, in search_addresses
+    GET /api/v1/addresses/search
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/search?latitude=0.0&longitude=-180.5&radius_km=5.0 "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:15] WARNING [app.main.validation_exception_handler:53] Validation error on request path /api/v1/addresses/search: 1 validation error:
+  {'type': 'greater_than', 'loc': ('query', 'radius_km'), 'msg': 'Input should be greater than 0', 'input': '0.0', 'ctx': {'gt': 0.0}}
+
+  File "D:\code interview\app\routers\addresses.py", line 15, in search_addresses
+    GET /api/v1/addresses/search
+[2026-06-28 11:39:15] INFO [httpx._send_single_request:1025] HTTP Request: GET http://testserver/api/v1/addresses/search?latitude=0.0&longitude=0.0&radius_km=0.0 "HTTP/1.1 422 Unprocessable Entity"
+[2026-06-28 11:39:15] INFO [app.main.lifespan:34] Shutting down Address Book application...
